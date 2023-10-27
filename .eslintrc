@@ -1,0 +1,85 @@
+{
+  "extends": [
+    "react-app",
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "varsIgnorePattern": "[iI]gnored",
+        "caughtErrors": "none"
+      }
+    ],
+    "no-case-declarations": "off",
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "no-var": "error",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": "first",
+        "ObjectExpression": 1,
+        "ImportDeclaration": 1,
+        "flatTernaryExpressions": true,
+        "ignoreComments": true
+      }
+    ],
+    "max-len": [
+      "warn",
+      {
+        "code": 160,
+        "tabWidth": 4,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "no-useless-escape": "off",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "arrow-spacing": "error"
+  }
+}

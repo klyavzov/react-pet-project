@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    position: fixed;
+    width: 85%;
+    height: 59px;
+    top: 55px;
+    left: 7.5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoHref {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logoText {
+    color: #000;
+    font-family: "Oswald Medium", sans-serif;
+    font-size: calc(1em + 0.5vw);
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .header {
+        width: 92%;
+        height: 54px;
+        top: 24px;
+        left: 4%;
+    }
+
+    .logoHref {
+        width: 25%;
+    }
+}
+
+@media (max-width: 576px){
+    .header {
+        width: 88%;
+        height: 38px;
+        top: 0;
+        left: 0;
+        padding: 10px 6%;
+        background: #FFFFFF;
+    }
+
+    .logoHref {
+        width: 7%;
+    }
+}

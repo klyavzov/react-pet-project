@@ -1,0 +1,79 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    margin-left: 1.5em;
+    color: #FFF;
+    font-family: "Oswald Regular", sans-serif;
+    font-size: calc(1em + 0.5vw);
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.link:hover {
+    color: #000;
+}
+
+.activeLink {
+    color: #444;
+}
+
+.mobileNav {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    top: -220px;
+    left: 0;
+    flex-direction: column;
+    background: #FFFFFF;
+    transition: 0.5s ease-in-out;
+}
+
+.mobileNavActive {
+    top: 58px;
+}
+
+.mobileLink {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0;
+    color: #000;
+    font-family: "Oswald Medium", sans-serif;
+    font-size: calc(1em + 0.5vw);
+    line-height: normal;
+    text-transform: uppercase;
+    border-top: 1px solid #E6E6E6;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.mobileLink:hover {
+    color: #8d8d8d;
+}
+
+@media (max-width: 768px){
+    .link {
+        color: #000;
+        font-size: calc(0.8em + 0.5vw);
+    }
+
+    .link:hover {
+        color: #8d8d8d;
+    }
+
+    .activeLink {
+        color: #68B738;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .nav {
+        display: none;
+    }
+}

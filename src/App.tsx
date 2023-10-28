@@ -1,6 +1,6 @@
 import React, {Suspense} from 'react';
 import {Routes, Route, BrowserRouter, Navigate} from 'react-router-dom';
-import Loading from './Components/Loading';
+import Loading from './components/Loading';
 
 const AppRoot = () => {
   return (
